@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<h1 class="title">{% block title %} Flask posts - posts list {% endblock %}</h1>
+
+{% for post in posts %}
+<a href="{{ url_for("posts.detail", id=post.id) }}">
+	<article class="post">
+		<h1>{{ post.title }}</h1>
+		<p class="content">
+			{{ post.body | truncate(20) }}
+		</p>
+	</article>
+</a>
+
+{% endfor %}
+
+
+{% endblock %}

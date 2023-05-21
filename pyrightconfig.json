@@ -1,0 +1,9 @@
+{
+  "venv": "blueprints",
+  "venvPath": "d:\\Envs",
+  "executionEnvironments": [
+    {
+      "root": "app"
+    }
+  ]
+}
